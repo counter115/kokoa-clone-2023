@@ -1,0 +1,8 @@
+:root {
+  --yellow: #f9dc05;
+  --yellow-dark: #daa520; /* 골드색, RGB(218, 165, 32) */
+  --dark-gray: rgba(51, 51, 51, 0);
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  --main-color: rgba(0, 0, 0, 0.4);
+}

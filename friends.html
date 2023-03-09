@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Chat</title>
+  </head>
+  <body>
+    <!-- 상태바 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>JH Telecom</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>19:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>120%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span
+          ><i class="fa-solid fa-music fa-lg"></i>
+          <div class="point"></div>
+        </span>
+        <span
+          ><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+      <i class="fa-solid fa-circle-info"></i>
+      Friends' Names Display
+      <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://img.khan.co.kr/news/2023/01/02/news-p.v1.20230102.1f95577a65fc42a79ae7f990b39e7c21_P1.png"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">아이유</h4>
+            <!-- <h6 class="user-component__subtitle">this it text</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Made -EDAM-
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>2</span>
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chat.html">
+            <span class="nav__notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__dot"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/d8e2688ef0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
